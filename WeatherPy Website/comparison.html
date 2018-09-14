@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Comparisons - WeatherPy Visualization</title>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="color: white; background-color: rgb(65, 192, 150);">
+            <span class="nav-color">Home</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="comparison.html">Comparisons <span class="sr-only">(current)</span></a></li> -->
+              <li class="active">
+                    <a href="comparison.html" style="color: white; background-color: rgb(63, 206, 150);">
+                    Comparisons <span class="sr-only">
+                    (current)</span></a></li>
+              <li class="active"><a href="dataSet.html" style="color: white; background-color: rgb(119, 184, 154);">Data Set <span class="sr-only">(current)</span></a></li>
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="plt_Tmp.html">Temperature</a></li>
+                          <li><a href="plt_Hmd.html">Humidity</a></li>
+                          <li><a href="plt_Wnd.html">Wind Speed</a></li>
+                          <li><a href="plt_CldCvr.html">Cloud Cover</a></li>
+                      </ul>
+              </li>
+        </ul>
+      </div>
+    <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  <div class="container">
+
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-1"></div>
+  
+              <div class="col-md-10">
+                  <div class="panel panel-default">
+                      <div class="panel-body">
+                          <h2>Comparison: Latitude vs X</h2>
+                          <hr>
+                          <p class="text2">Click on a plot to get a larger view and analysis.</p>
+                          <div class="row" style="padding-bottom:10px">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                  <h3>vs. Max Temperature</h3>
+                                  <a href="plt_Tmp.html">
+                                      <img src="index_files/lat_vs_Temp.png" 
+                                    alt="" style="width:100%" class="current">
+                                  </a>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                  <h3>vs. Humidity</h3>
+                                    <a href="plt_Hmd.html">
+                                        <img src="index_files/lat_vs_Humid.png" alt="" style="width:100%">
+                                    </a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                  <h3>vs. Wind Speed</h3>
+                                    <a href="plt_Wnd.html">
+                                        <img src="index_files/lat_vs_Windy.png" alt="" style="width:100%">
+                                    </a>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                  <h3>vs. Cloud Cover</h3>
+                                    <a href="plt_CldCvr.html">
+                                        <img src="index_files/lat_vs_Cloudy.png" alt="" style="width:100%">
+                                    </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-md-1"></div>
+          </div>
+      </div>
+  
+      <footer>
+          <p style="text-align: center">
+              <i class="glyphicon glyphicon-copyright-mark">Tom Matoushek 2018</i>
+          </p>
+      </footer>
+      
+  </body>
+  </html>
